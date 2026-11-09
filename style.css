@@ -54,7 +54,7 @@ button {
 }
 .logo {
     display: flex;
-    align-item: center;
+    align-items: center;
     gap: 15px;
 }
 .logo-icon {
@@ -171,4 +171,208 @@ button {
     color: var(--muted);
     letter-spacing: 4px;
     font-size: 13px;
+}
+.hero h1 {
+    font-family: var(--display);
+    font-size: clamp(50px, 7vw, 85px);
+    line-height: 1;
+    letter-spacing: -4px;
+    margin: 15px 0;
+}
+.hero h1 span {
+    color: var(--orange);
+}
+
+.hero h2 {
+    font-size: 22px;
+    font-weight: 500;
+}
+.hero h2 span {
+    color: var(--orange);
+}
+.hero-description {
+    color: var(--muted);
+    max-width: 500px;
+    margin: 25px 0;
+    font-size: 14px;
+}
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.hero-socials {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 35px;
+    font-size: 11px;
+    color: var(--muted);
+}
+.hero-socials span {
+    height: 15px;
+    width: 1px;
+    background: var(--border);
+}
+
+/*HERO IMAGE*/
+.hero-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.image-frame {
+    width: 80%;
+    height: 450px;
+    border: 1px solid rgba(255,121,0,0.3);
+    background: linear-gradient(145deg, #1a1a1a, #050505);
+    position: relative;
+    overflow: hidden;
+}
+.image-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.image-placeholder {
+    display: none;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:  var(--muted);
+}
+.image-placeholder h2 {
+    font-size: 80px;
+    color: var(--orange);
+}
+.image-glow {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: var(--orange);
+    filter: blur(150px);
+    opacity: 0.15;
+}
+.floating-card {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+    background: #151515;
+    border: 1px solid var(--border);
+}
+.floating-card strong,
+.floating-card small {
+    display: block;
+}
+.floating-card strong {
+    font-size: 11px;
+}
+.floating-card small {
+    font-size: 10px;
+    color: var(--muted);
+}
+
+/*SECTION HEADINGS*/
+.section-heading {
+margin-bottom: 50px;
+}
+.section-heading {
+    font-family: var(--display);
+    font-size: clamp(35px,5vw,60px);
+    line-height: 1.1;
+    letter-spacing: -2px;
+}
+.section-heading h2 span {
+    color: var(--orange);
+}
+.section-description {
+    max-width: 500px;
+    color: var(--muted);
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+/*ABOUT SECTION*/
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+}
+.about-content p {
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 20px;
+}
+.about-content .lead {
+    font-size: 19px;
+    color: var(--text);
+}
+.text-link {
+    color: var(--orange);
+    font-size: 12px;
+}
+.about-facts {
+    border-top: 1px solid var(--border);
+}
+.facts {
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border);
+}
+.fact > span {
+    color: var(--orange);
+}
+.fact strong,
+.fact small {
+    display: block;
+}
+.fact strong {
+    font-size: 13px;
+}
+.fact small{
+    color: var(--muted);
+    font-size: 11px;
+}
+
+/*PROJECTS*/
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 25px;
+}
+.project-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 20px;
+    transition: 0.3s;
+}
+.project-card:hover {
+    transform: translateY(-7px);
+    border-color: var(--color);
+}
+.project-image {
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.project-image span {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 10px;
+    color: #aaa;
+}
+.project-image h2 {
+    font-family: var(--display);
+    font-size: 35px;
 }
