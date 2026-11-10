@@ -58,4 +58,33 @@ window.addEventListener("scroll", () => {
             link.classList.add("active");
         }
     });
-})
+});
+
+//BACK TO TOP BUTTON
+const backToTop = document.getElementById("back-to-top");
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 500) {
+        backToTop.classList.add("visible");        
+    } else {
+        backToTop.classList.remove("visible");
+    }
+});
+
+backToTop.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
+
+//DARK / LIGHT MODE
+const themeToggle = document.getElementById("theme-toggle");
+themeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("light");
+});
+
+//COPYRIGHT YEAR
+document.getElementById("year").textContent = 
+new Date().getFullYear();
+
+

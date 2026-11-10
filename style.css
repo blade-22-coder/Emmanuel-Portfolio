@@ -668,3 +668,28 @@ margin-bottom: 50px;
         transition-duration: 0.01ms !important;
     }
 }
+
+/* LIGHT THEME*/
+body.light {
+    --bg: #f5f3ef;
+    --surface: #ffffff;
+    --surface-light: #ebe8e2;
+    --text: #171615;
+    --muted: #68645f;
+    --border: rgba(0,0,0,0.12);
+}
+body.light .header {
+    background: rgba(245,243,239,0.9);
+}
+body.light .navbar {
+    background: var(--bg);
+}
+body.light .floating-card {
+    background: #ffffff;
+}
+body.light .project-card {
+    background: #ffffff;
+}
+body.light .image-frame {
+    background: linear-gradienr(145deg, #eee, #ddd);
+}
