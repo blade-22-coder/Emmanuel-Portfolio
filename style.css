@@ -693,3 +693,21 @@ body.light .project-card {
 body.light .image-frame {
     background: linear-gradienr(145deg, #eee, #ddd);
 }
+
+.skill-group img {
+    width: 29px;
+    height: 29px;
+    object-fit: contain;
+}
+.org-logo img {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+    border-radius: 8px;
+}
+.logo img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    border-radius: 50%
+}
