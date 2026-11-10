@@ -376,3 +376,135 @@ margin-bottom: 50px;
     font-family: var(--display);
     font-size: 35px;
 }
+.project-image p {
+    font-size: 11px;
+}
+.project-fypms {
+    background: linear-gradient(135deg, #111d35,#080a10);
+}
+.project-quickaid {
+    background: linear-gradient(135deg,#172c40,#0b111b);
+}
+.project-hospital {
+    background: linear-gradient(135deg,#17302c,#080d0c);
+}
+.project-robotics {
+    background: linear-gradient(135deg,#392311,#100b07);
+}
+.project-content {
+    padding: 20px;
+}
+.project-category {
+    font-size: 10px;
+    color: var(--orange);
+    letter-spacing: 1px;
+}
+.project-content h3 {
+    font-family: var(--dsiplay);
+    font-size: 22px;
+    margin: 10px 0;
+}
+.project-content > p:not(.project-category) {
+    color: var(--muted);
+    font-size: 12px;
+}
+.project-tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+.project-tags span {
+    border: 1px solid var(--border);
+    padding: 5px 10px;
+    font-size: 10px;
+    color: var(--muted);
+}
+.project-link {
+    display: block;
+    border-top: 1px solid var(--border);
+    padding-top: 15px;
+    font-size: 12px;
+    color: var(--orange);
+}
+
+/*EXPERIENCE*/
+.timeline {
+    border-top: 1px solid var(--border);
+}
+.timeline-item {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 30px;
+    padding: 35px 0;
+    border-bottom: 1px solid var(--border);
+}
+.timeline-date {
+    font-size: 10px;
+    color: var(--muted);
+    letter-spacing: 1px;
+}
+.timeline-tag {
+    display: inline-block;
+    border: 1px solid var(--orange);
+    padding: 4px 10px;
+    font-size: 10px;
+    color: var(--orange);
+}
+.timeline-content h3 {
+    font-family: var(--display);
+    font-size: 23px;
+    margin: 15px 0 5px;
+}
+.timeline-content h4 {
+    font-size: 13px;
+    color: var(--orange);
+    font-weight: 500;
+}
+.timeline-content p,
+.timeline-content li {
+    color: var(--muted);
+    font-size: 12px;
+}
+.timeline-content p {
+    margin: 15px 0;
+}
+.timeline-content ul {
+    padding-left: 20px;
+}
+
+/*SKILLS*/
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    border: 1px solid var(--border);
+}
+.skill-group {
+    padding: 30px;
+    border: 1px solid var(--border);
+}
+.skill-group > span {
+    color: var(--orange);
+    font-size: 11px;
+}
+.skill-group h3 {
+    font-family: var(--display);
+    margin: 10px 0 20px;
+}
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.skill-list span {
+    padding: 8px 12px;
+    border: 1px solid var(--border);
+    font-size: 11px;
+    color: var(--muted);
+    transition: 0.3s;
+}
+.skill-list span:hover {
+    border-color: var(--orange);
+    color: var(--orange);
+
+}
