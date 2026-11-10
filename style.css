@@ -579,16 +579,16 @@ margin-bottom: 50px;
     pointer-events: auto;
 }
 
-/*ANIMATIONS
+/*ANIMATIONS*/
 .reveal {
-    opacity: 0;
+    opacity: 1;
     transform: translateY(25px);
     transition: opacity 0.8 ease, transfrom 0.8s ease;
 }
 .reveal.visible {
     opacity: 1;
     transform: translateY(0);
-}*/
+}
 
 /*RESPONSIVE DESIGN*/
 @media(max-width:900px) {
@@ -610,7 +610,7 @@ margin-bottom: 50px;
         padding: 15px 20px;
     }
     .navbar {
-        dsiplay: none;
+        display: none;
         position: absolute;
         top: 70px;
         left: 0;
