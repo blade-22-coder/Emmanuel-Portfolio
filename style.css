@@ -280,9 +280,9 @@ button {
 }
 .marquee div {
     display:inline-block;
-    animation:marquee 28s linear infinite
+    animation: marquee 28s linear infinite
 }
-@keyframes marquee{to{transform:translateX(-50%)}}
+@keyframes marquee {to{transform:translateX(-50%)}}
 /*HERO IMAGE*/
 .hero-image {
     position: relative;
@@ -361,8 +361,10 @@ margin-bottom: 50px;
 .section-description {
     max-width: 500px;
     color: var(--muted);
-    font-size: 13px;
+    font-size: 18px;
     margin-top: 20px;
+    font-family: var(--font);
+    letter-spacing: 2px;
 }
 
 /*ABOUT SECTION*/
@@ -670,7 +672,7 @@ background:
     transition: transform 0.3s ease;
 }
 .skill-item:hover img {
-    transfrom: scale(1.2);
+    transform: scale(1.2);
 }
 .skill-item > div {
     min-width: 0;
@@ -739,6 +741,16 @@ background:
     margin-top: 30px;
     font-size: 11px;
     color: var(--muted);
+}
+.contact-links a img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    border-radius: 50%
+    
+}
+a:hover img {
+    transform: scale(1.2);
 }
 .contact-links a:hover {
     color: var(--orange);
