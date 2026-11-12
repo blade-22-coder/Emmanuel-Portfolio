@@ -595,7 +595,7 @@ margin-bottom: 50px;
     width: 55px;
     height: 2px;
     background: var(--orange);
-    tranistion: width 0.4s ease;
+    transition: width 0.4s ease;
 }
 .skill-group:hover::before {
     width: 100%;
@@ -667,7 +667,7 @@ background:
     flex-shrink: 0;
     width: 32px;
     height: 32px;
-    ohjext-fit: contain;
+    object-fit: contain;
     padding: 3px;
     transition: transform 0.3s ease;
 }
