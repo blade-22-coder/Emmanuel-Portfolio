@@ -37,6 +37,22 @@ revealElements.forEach(element => {
     observer.observe(element);
 });
 
+//PROGRESS BAR AND CURSOR GLOW
+const progress = document.querySelector('.progress-line');
+
+function updateProgress() {
+    const max = document.documentElement.scrollHeight-innerHeight;
+    progress.style.width=`${max>0?scrollY/max*100:0}%`
+}
+addEventListener('scroll',updateProgress,{passive:true});updateProgress();
+
+
+const glow = document.querySelector('.cursor-glow');
+if (
+    matchMedia('(pointer:fine)').matches&&glow)addEventListener('pointermove',e => {
+        glow.style.left=e.clientX+'px';glow.style.top=e.clientY+'px'},{passive:true}
+    );
+
 //ACTIVE NAVIGATION
 const sections = document.querySelectorAll("section[id]");
 window.addEventListener("scroll", () => {

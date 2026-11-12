@@ -15,6 +15,9 @@
 
 </head>
 <body>
+    <div class="noise"></div>
+    <div class="cursor-glow"></div>
+    <div class="progress-line"></div>
     <!--NAVIGATION-->
 
     <header class="header">
@@ -27,21 +30,17 @@
         </a>
 
         <nav class="navbar" id="navbar">
-            <a href="#home" class="nav-link active">Home</a>
             <a href="#about" class="nav-link active">About</a>
-            <a href="#projects" class="nav-link active">Projects</a>
+            <a href="#projects" class="nav-link active">Selected work</a>
             <a href="#experience" class="nav-link active">Experience</a>
-            <a href="#skills" class="nav-link active">Skills</a>
-            <a href="#contact" class="nav-link active">Contact</a>
+            <a href="#skills" class="nav-link active">Toolkit</a>
+            <a href="#contact" class="nav-link active">Let's talk↗</a>
         </nav>
 
         <div class="header-actions">
             <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
                 ☀️
             </button>
-            <a href="assets/CURRICULUM VITAE, KITARA OKELLO EMMANUEL.docx" class="button-outline" download>
-                Download CV ⬇️
-            </a>
         </div>
 
         <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">
@@ -53,6 +52,8 @@
     <section class="hero section" id="home">
         <div class="hero-container">
             <div class="hero-content reveal">
+                <span><i class="dot"></i> AVAILABLE FOR OPPORTUNITIES</span>
+                <span>UGANDA · SOFTWARE DEVELOPMENT</span>
                 <p class="eyebrow">
                     <span class="status-dot"></span>
                     Turning ideas into impact
@@ -75,27 +76,9 @@
                 <p class="hero-description">
                     I build practical digital solutions, explore emerging technologies,
                     and transform complex problems into meaningful user-focused experiences.
-                </p>
+                </p><a class="circle-link" href="#projects">↓</a>
+        
 
-                <div class="hero-buttons">
-                    <a href="#projects" class="button button-primary">
-                        Explore My Work ↗️
-                    </a>
-
-                    <a href="#contact" class="button button-ghost">
-                        Get In Touch ➡️
-                    </a>
-                </div>
-
-                <div class="hero-socials">
-                    <a href="https://github.com/blade-22-coder" target="_blank">
-                        GitHub ↗️
-                    </a>
-                    <span></span>
-                    <a href="#experience">
-                        Professional Journey
-                    </a>
-                </div>
             </div>
 
             <!--HERO IMAGE-->
@@ -112,12 +95,15 @@
                 </div>
 
                 <div class="floating-card">
-                    <span>💠</span>
+                    <span>⁘</span>
                     <div>
                         <strong>Build with purpose</strong>
                         <small>Code • Create • Improve</small>
                     </div>
                 </div>
+            </div>
+            <div class="marquee">
+                <div>THINK • DESIGN • DEVELOP • ITERATE • THINK • DESIGN • DEVELOP • ITERATE • &nbsp;</div>
             </div>
         </div>
     </section>
@@ -125,10 +111,9 @@
     <!--ABOUT SECTION-->
     <section class="section about-section" id="about">
         <div class="section-heading reveal">
-            <p class="eyebrow">01 – ABOUT  ME</p>
+            <p class="eyebrow">01 – THE PERSON BEHIND THE BUILD</p>
             <h2>
-                Curiosity is my
-                <span>starting point.</span>
+                Started with <br>.......<span><i>curisority!</i><span>
             </h2>
         </div>
 
@@ -154,10 +139,6 @@
                     I believe in continuous learning, clean code, meaningful collaboration,
                     and technolgy that creates measurable impact.
                 </p>
-
-                <a href="#experience" class="text-link">
-                    Explore My Journey ↗️
-                </a> 
             </div>
 
             <div class="about-facts reveal">
@@ -237,7 +218,7 @@
                     </div>
 
                     <a href="https://github.com/blade-22-coder" target="_blank" class="project-link">
-                       View Project ↗️
+                       View Project↗
                     </a>
                 </div>
             </article>
@@ -266,7 +247,7 @@
                     </div>
 
                     <a href="https://github.com/blade-22-coder" target="_blank" class="project-link">
-                        View project ↗️
+                        View project↗
                     </a>
                 </div>
             </article>
@@ -298,7 +279,7 @@
                     <a href="https://github.com/blade-22-coder"
                     target="_blank"
                     class="project-link">
-                    View Project ↗️
+                    View Project↗
                     </a>
                 </div>
             </article>
@@ -329,7 +310,7 @@
 
                     <a href="#experience"
                     class="project-link">
-                    View Experience ↗️</a>
+                    View Experience↗</a>
                 </div>
             </article>
 
@@ -554,7 +535,7 @@
                     </p>
                 </div>
 
-                div class="skill-list">
+                <div class="skill-list">
                     <div class="skill-item">
                         <img src="assets/skills/postgresql.png" alt="postgreSQL">
                         <div>
@@ -663,50 +644,151 @@
                                    extend beyond programming, covering
                             system design, application integration, security and infrastructure operations.
                     </p>
+                </div>
+
                 <div class="skill-list">
-                    <span>
+                    <div class="skill-item">
                         <img src="assets/skills/plug.png" alt="API Development">
-                        <p>API Development</p></span>
-                    <span>
-                        <img src="assets/skills/system architecture.png" alt="System Design & Architecture">
-                        <p>System Design & Architecture</p></span>
-                    <span>
+                        <div>
+                            <h4>API Development</h4>
+                            <p>
+                                Designing backend endpoints and connecting frontend applications with server-side services.
+                            </p>
+                            <small>APPLICATION INTEGRATION<small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <img src="assets/skills/system architecture.png" alt="System Architecture">
+                        <div>
+                            <h4>System Design & Architecture</h4>
+                            <p>
+                                Translating requirements into strucutred applications components, workflows
+                                and database relationships.
+                            </p>
+                            <small>SOFTWARE ENGINEERING<small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-list">
+                    <div class="skill-item">
                         <img src="assets/skills/activity.png" alt="IT Monitoring">
-                        <p>IT Monitoring</p></span>
-                    <span>
+                        <div>
+                            <h4>IT Infrastructure Monitoring</h4> 
+                            <p>
+                                Observing application performance, network health, resource utilisation
+                                and service availability.
+                            </p>
+                            <small>URA INTERNSHIP EXPOSURE<small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-list">
+                    <div class="skill-item">
                         <img src="assets/skills/bot.png" alt="Robotics">
-                        <p>Robotics & Automation</p></span>
-                    <span>
-                        <img src="assets/skills/security.png" alt="RBAC">
-                        <p>Authentication & RBAC</p></span>
-                    <span>
-                        <img src="assets/skills/database.png" alt="Database Design">
-                        <p>Database Design</p></span>
+                        <div>
+                            <h4>Robotics & Automation</h4> 
+                            <p>
+                                Combining programming, electronics and mechanical concepts to develop
+                                practical technology projects.
+                                and service availability.
+                            </p>
+                            <small>FUNDI BOTS ROBOTICS CAMP<small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <img src="assets/skills/security.png" alt="Authentication & RBAC">
+                        <div>
+                            <h4>Authentication & RBAC</h4> 
+                            <p>
+                                Understanding user authentication, role-based permissions and controlled access to application
+                                resources.
+                            </p>
+                            <small>APPLICATION SECURITY<small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <img src="assets/skills/database.png" alt="Database">
+                        <div>
+                            <h4>Database Design</h4> 
+                            <p>
+                                Structuring relational databases, defining realtionships and organising 
+                                application information.
+                            </p>
+                            <small>DATA MODELLING<small>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="skill-group">
-                <span>04</span>
-                <h3>Professional Strengths</h3>
+
+            <div class="skill-group reveal">
+                <div class="skill-group-header">
+                    <span class="group-number">04 / PROFESSIONAL STRENGTHS</span>
+                    <h3>How I work and grow.</h3>
+                    <p>
+                        The personal qualities and professional capabilities I bring
+                        to teams, workplaces, learning environments and
+                        technology projects.
+                    </p>
+                </div>
+
                 <div class="skill-list">
-                    <span>
+                    <div class="skill-item">
                         <img src="assets/skills/lightbulb.png" alt="Problem Solving">
-                        <p>Problem Solving</p></span>
-                    <span>
+                        <div>
+                            <h4>Problem Solving</h4>
+                            <p>Breaking down complex challenges, identifying root causes
+                                and developing practical solutions.</p>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
                         <img src="assets/skills/messages.jpg" alt="Communication">
-                        <p>Communication</p></span>
-                    <span>
-                        <img src="assets/skills/brain.png" alt="Critical Thinking">
-                        <p>Critical Thinking</p></span>
-                    <span>
-                        <img src="assets/skills/users.png" alt="Team Work">
-                        <p>Team Work</p></span>
-                    <span>
-                        <img src="assets/skills/presentation.png" alt="Technical Training">
-                        <p>Technical Training & Tutoring</p></span>
-                    <span>
+                        <div>
+                            <h4>Communication</h4>
+                            <p>Expressing ideas clearly and explaining technical concepts to
+                                different audiences while learning too.</p>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <img src="assets/skills/brain.png" alt=" Critical Thinking">
+                        <div>
+                            <h4>Critical Thinking</h4>
+                            <p>Evaluating information, analysing alternatives and 
+                                making informed decisions.</p>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <img src="assets/skills/presentation.png" alt="Technical Training & Tutoring">
+                        <div>
+                            <h4>Technical Training & Tutoring</h4>
+                            <p>Simplifying technical concepts and guiding learners through practical
+                                programming and robotics activities.</p>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
                         <img src="assets/skills/refresh.png" alt="Adaptability">
-                        <p>Adaptability</p></span>
+                        <div>
+                            <h4>Adaptability & Continuous Learning</h4>
+                            <p>Embracing new technologies, developing new competencies
+                                and adjusting to change environments.</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
