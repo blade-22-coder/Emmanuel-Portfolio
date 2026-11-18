@@ -11,6 +11,7 @@
     --font: 'DM Sans', sans-serif;
     --display: 'Space Grotesk', sans-serif;
     --line:#ffffff22;
+    --font-scale: 1.12;
 
 }
 
@@ -206,6 +207,13 @@ button {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 50px;
+}
+.topline {
+    display: flex;
+    justify-content: space-between;
+    color: var(--muted);
+    font: 10px var(--mono);
+    letter-spacing: 1px;
 }
 .eyebrow {
     color: var(--orange);
